@@ -22,7 +22,8 @@ public static class DependencyInjection
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddScoped<IUserService, UserService>();
-        // 👉 Lägg till AutoMapper-registreringen här:
+
+        // Lägg till AutoMapper-registreringen här:
         services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
         return services;
