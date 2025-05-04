@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "Application\ApplicationLayer.csproj", "{F52F7C0E-27D0-46ED-A76D-C57A7347A0C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLayer", "DemoLayer\DemoLayer.csproj", "{01CDA76D-0E63-4C0B-A1A0-590FFD157AFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DemoLayer\DomainLayer.csproj", "{01CDA76D-0E63-4C0B-A1A0-590FFD157AFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}"
 EndProject
