@@ -27,7 +27,7 @@ namespace ApplicationLayer.Services
             };
 
             await userRepository.AddAsync(newUser);
-            await userRepository.SaveChangesAsync();  // ✅ Viktigt om din repository har detta!
+            await userRepository.SaveChangesAsync();  
 
             // Return JWT directly after registration
             return jwtTokenGenerator.GenerateToken(newUser);
