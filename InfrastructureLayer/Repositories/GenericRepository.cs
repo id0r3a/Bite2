@@ -63,7 +63,7 @@ namespace InfrastructureLayer.Repositories
             await _context.SaveChangesAsync();
         }
 
-        // 🆕 Extra: Hämtar första matchande post baserat på en expression
+        //Hämtar första matchande post baserat på en expression
         public async Task<T?> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
         {
             return await _context.Set<T>().FirstOrDefaultAsync(predicate, cancellationToken);

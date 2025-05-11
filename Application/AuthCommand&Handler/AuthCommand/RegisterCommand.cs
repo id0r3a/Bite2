@@ -13,9 +13,10 @@ namespace ApplicationLayer.AuthCommand_Handler.AuthCommand
     {
         public RegisterDTO RegisterDto { get; }
 
-        public RegisterCommand(RegisterDTO dto)
-        {
-            RegisterDto = dto;
-        }
+        //public RegisterCommand(RegisterDTO dto)
+        //{
+        //    RegisterDto = dto;
+        //}
     }
+
 }

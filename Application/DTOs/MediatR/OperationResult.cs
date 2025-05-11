@@ -13,7 +13,7 @@ namespace ApplicationLayer.DTOs.MediatR
         public string? Message { get; set; }
         public T? Data { get; set; }
 
-        // ✅ Skapa ett lyckat resultat (med data + valfri message)
+        //Skapa ett lyckat resultat (med data + valfri message)
         public static OperationResult<T> Success(T data, string? message = null)
         {
             return new OperationResult<T>
@@ -24,7 +24,7 @@ namespace ApplicationLayer.DTOs.MediatR
             };
         }
 
-        // ❌ Skapa ett misslyckat resultat (med felmeddelande)
+        //Skapa ett misslyckat resultat (med felmeddelande)
         public static OperationResult<T> Failure(string errorMessage)
         {
             return new OperationResult<T>
@@ -35,13 +35,13 @@ namespace ApplicationLayer.DTOs.MediatR
         }
     }
 
-    // Resultat utan data
+    //Resultat utan data
     public class OperationResult
     {
         public bool IsSuccess { get; set; }
         public string? Message { get; set; }
 
-        // ✅ Lyckat utan data + valfri message
+        //Lyckat utan data + valfri message
         public static OperationResult Success(string? message = null)
         {
             return new OperationResult
@@ -51,7 +51,7 @@ namespace ApplicationLayer.DTOs.MediatR
             };
         }
 
-        // ❌ Misslyckat utan data
+        //Misslyckat utan data
         public static OperationResult Failure(string errorMessage)
         {
             return new OperationResult

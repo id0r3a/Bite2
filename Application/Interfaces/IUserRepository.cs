@@ -11,8 +11,5 @@ namespace ApplicationLayer.Interfaces
     {
         Task<User?> GetByUsernameAsync(string username);
         Task<bool> UsernameExistsAsync(string username);
-
-        // Lägg till SaveChangesAsync här för tydlighet!
-        Task SaveChangesAsync();
     }
 }

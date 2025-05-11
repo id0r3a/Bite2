@@ -20,7 +20,7 @@ namespace ApplicationLayer.ReviewCommand_Query_Handler.ReviewHandler
         public async Task<OperationResult> Handle(UpdateReviewCommand request, CancellationToken cancellationToken)
         {
             // Hämta review från databasen baserat på ID
-            var review = await _repository.GetByIdAsync(request.ReviewId);
+            var review = await _repository.GetByIdAsync(request.ReviewDto.ReviewId);
             if (review == null)
             {
                 return OperationResult.Failure("Review not found.");

@@ -1,4 +1,5 @@
 ﻿using DomainLayer.Models;
+using InfrastructureLayer.Seed;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,9 @@ namespace InfrastructureLayer.Data
                 .HasOne(r => r.User)
                 .WithMany(u => u.Reviews)
                 .HasForeignKey(r => r.UserId);
+
+
+            SeedData.Seed(modelBuilder);
         }
     }
 }

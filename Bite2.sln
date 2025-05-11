@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{45251710-E75A-4BD0-8042-CAD539B6B5E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{45251710-E75A-4BD0-8042-CAD539B6B5E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "Application\ApplicationLayer.csproj", "{F52F7C0E-27D0-46ED-A76D-C57A7347A0C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLayer", "Application\ApplicationLayer.csproj", "{F52F7C0E-27D0-46ED-A76D-C57A7347A0C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DemoLayer\DomainLayer.csproj", "{01CDA76D-0E63-4C0B-A1A0-590FFD157AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLayer", "DemoLayer\DomainLayer.csproj", "{01CDA76D-0E63-4C0B-A1A0-590FFD157AFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{258C6DFA-EC89-4663-AB8B-0B1FC4294981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8CC8F02-5EC9-48E7-B03E-8F8C8C99619C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{258C6DFA-EC89-4663-AB8B-0B1FC4294981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{258C6DFA-EC89-4663-AB8B-0B1FC4294981}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{258C6DFA-EC89-4663-AB8B-0B1FC4294981}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{258C6DFA-EC89-4663-AB8B-0B1FC4294981}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
