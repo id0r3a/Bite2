@@ -4,6 +4,7 @@ using InfrastructureLayer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InfrastructureLayer.Migrations
 {
     [DbContext(typeof(Bite2DbContext))]
-    partial class Bite2DbContextModelSnapshot : ModelSnapshot
+    [Migration("20250506013657_Initial3")]
+    partial class Initial3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,7 +95,7 @@ namespace InfrastructureLayer.Migrations
                         new
                         {
                             OrderId = 1,
-                            OrderDate = new DateTime(2025, 5, 6, 1, 47, 48, 332, DateTimeKind.Utc).AddTicks(7589),
+                            OrderDate = new DateTime(2025, 5, 6, 1, 36, 57, 253, DateTimeKind.Utc).AddTicks(8460),
                             Status = "Completed",
                             TotalAmount = 209.98m,
                             UserId = 2
@@ -209,7 +212,7 @@ namespace InfrastructureLayer.Migrations
                             Comment = "Amazing pizza!",
                             Rating = 5,
                             RestaurantId = 1,
-                            ReviewDate = new DateTime(2025, 5, 6, 1, 47, 48, 332, DateTimeKind.Utc).AddTicks(7727),
+                            ReviewDate = new DateTime(2025, 5, 6, 1, 36, 57, 253, DateTimeKind.Utc).AddTicks(8519),
                             UserId = 2
                         });
                 });
@@ -242,14 +245,14 @@ namespace InfrastructureLayer.Migrations
                         new
                         {
                             UserId = 1,
-                            PasswordHash = "$2a$11$2H6bcNk9R2XnoD28uUmBSOq.kQVipVrYDyPaIrM6Fl.aYqzTCqNb6",
+                            PasswordHash = "hashedpassword1",
                             Role = "Admin",
                             Username = "Alice"
                         },
                         new
                         {
                             UserId = 2,
-                            PasswordHash = "$2a$11$rdp11hFep84t2JGj9p.lhueRXGmxC6eM/yQqEEASSzERRkeABhgBm",
+                            PasswordHash = "hashedpassword2",
                             Role = "User",
                             Username = "Bob"
                         });

@@ -22,5 +22,6 @@ namespace ApplicationLayer.Interfaces
 
         // Om du vill ha direkt access till IQueryable för avancerad querying:
         IQueryable<T> Query();
+        Task SaveChangesAsync();
     }
 }

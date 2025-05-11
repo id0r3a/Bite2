@@ -14,5 +14,9 @@ namespace ApplicationLayer.ReviewCommand_Query_Handler.ReviewCommand
             ReviewId = reviewId;
             ReviewDto = reviewDto;
         }
+
+        //Glöm inte parameterlös konstruktor om du använder model binding
+        public UpdateReviewCommand() { }
     }
+
 }
